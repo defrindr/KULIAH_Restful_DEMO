@@ -62,6 +62,22 @@ class QueryBuilder
             $response['message'] = "Data gagal ditambahkan: " . $th->getMessage();
             $response['code'] = 500;
         }
+        return $response;
+    }
+
+
+    function update($query, $binding)
+    {
+        $response['message'] = "Data berhasil diubah";
+        try {
+            $model = $this->db->prepare($query);
+            $model->setFetchMode(PDO::FETCH_OBJ);
+            $model->execute($binding);
+        } catch (\Throwable $th) {
+            $response['success'] = false;
+            $response['message'] = "Data gagal diubah: " . $th->getMessage();
+            $response['code'] = 500;
+        }
 
         return $response;
     }

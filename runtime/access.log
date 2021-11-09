@@ -1,46 +1,103 @@
-[500] [2021-11-09 03:43:08] localhost/webservice/api/pegawai/create : {"success":false,"message":"Internal Server Error: Call to undefined method PegawaiController::actionactionCreate()","data":null,"code":500}
-[500] [2021-11-09 03:43:47] localhost/webservice/api/pegawai/create : {"success":false,"message":"Internal Server Error: Call to undefined method PegawaiController::actionactionCreate()","data":null,"code":500}
-[500] [2021-11-09 03:43:48] localhost/webservice/api/pegawai/create : {"success":false,"message":"Internal Server Error: Call to undefined method PegawaiController::actionactionCreate()","data":null,"code":500}
-[500] [2021-11-09 03:43:48] localhost/webservice/api/pegawai/create : {"success":false,"message":"Internal Server Error: Call to undefined method PegawaiController::actionactionCreate()","data":null,"code":500}
-[500] [2021-11-09 03:44:16] localhost/webservice/api/pegawai/create : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nama_pegawai' cannot be null","data":null,"code":500}
-[500] [2021-11-09 03:44:18] localhost/webservice/api/pegawai/create : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nama_pegawai' cannot be null","data":null,"code":500}
-[400] [2021-11-09 03:45:03] localhost/webservice/api/pegawai/create : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
-[500] [2021-11-09 03:47:13] localhost/webservice/api/pegawai/create : {"success":false,"message":"Internal Server Error: Call to undefined method PegawaiController::getVerbs()","data":null,"code":500}
-[405] [2021-11-09 03:49:29] localhost/webservice/api/pegawai/create : {"success":false,"message":"Method Not Allowed :POST","data":null,"code":405}
-[405] [2021-11-09 03:49:36] localhost/webservice/api/pegawai/create : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[200] [2021-11-09 03:49:38] localhost/webservice/api/pegawai/idnex : {"success":false,"message":"action must be set","data":null,"code":200}
-[200] [2021-11-09 03:49:40] localhost/webservice/api/pegawai/index : {"success":false,"message":"action must be set","data":null,"code":200}
-[200] [2021-11-09 03:49:43] localhost/webservice/api/pegawai : {"success":false,"message":"action must be set","data":null,"code":200}
-[200] [2021-11-09 03:49:52] localhost/webservice/api/pegawai : {"success":false,"message":"Data kosong","data":null,"code":200}
-[200] [2021-11-09 03:51:51] localhost/webservice/api/pegawai : {"success":false,"message":"Data kosong","data":null,"code":200}
-[200] [2021-11-09 03:52:53] localhost/webservice/api/pegawai : {"success":false,"message":"Data kosong","data":null,"code":200}
-[200] [2021-11-09 03:52:54] localhost/webservice/api/pegawai : {"success":false,"message":"Data kosong","data":null,"code":200}
-[200] [2021-11-09 03:53:01] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":null,"code":200,"test":"berjalan lancar"}
-[200] [2021-11-09 03:53:25] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
-[200] [2021-11-09 03:53:33] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":[{"test":"berjalan lancar"}],"code":200}
-[200] [2021-11-09 03:53:42] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
-[200] [2021-11-09 03:54:03] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
-[200] [2021-11-09 03:54:04] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
-[200] [2021-11-09 03:54:05] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
-[200] [2021-11-09 03:54:05] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
-[200] [2021-11-09 03:54:06] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
-[200] [2021-11-09 03:54:06] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
-[405] [2021-11-09 03:54:16] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:17] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:17] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:17] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:18] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:19] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:20] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:20] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:21] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:21] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:21] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:21] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:22] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[405] [2021-11-09 03:54:23] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
-[200] [2021-11-09 03:55:05] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"action must be set","data":null,"code":200}
-[200] [2021-11-09 03:55:06] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"action must be set","data":null,"code":200}
-[200] [2021-11-09 03:55:07] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"action must be set","data":null,"code":200}
-[200] [2021-11-09 03:55:07] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"action must be set","data":null,"code":200}
-[404] [2021-11-09 03:55:34] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"action not found","data":null,"code":404}
+[400] [2021-11-09 04:16:11] localhost/webservice/api/master-posisi/create : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 04:16:12] localhost/webservice/api/master-posisi/create : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[405] [2021-11-09 04:16:36] localhost/webservice/api/master-posisi/create : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[400] [2021-11-09 04:16:52] localhost/webservice/api/master-posisi/create : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[200] [2021-11-09 04:17:11] localhost/webservice/api/master-posisi/create : {"success":true,"message":"Data berhasil ditambahkan","data":null,"code":200}
+[500] [2021-11-09 04:17:37] localhost/webservice/api/master-posisi/create : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'KEPALA SEKOLAH' for key 'nama_posisi'","data":null,"code":500}
+[200] [2021-11-09 04:18:00] localhost/webservice/api/master-posisi/create : {"success":true,"message":"Data berhasil ditambahkan","data":null,"code":200}
+[200] [2021-11-09 04:18:06] localhost/webservice/api/master-posisi/create : {"success":true,"message":"Data berhasil ditambahkan","data":null,"code":200}
+[200] [2021-11-09 04:18:16] localhost/webservice/api/master-posisi/create : {"success":true,"message":"Data berhasil ditambahkan","data":null,"code":200}
+[500] [2021-11-09 04:19:44] localhost/webservice/api/master-posisi/create : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'STAFF KEBERSIHAN' for key 'nama_posisi'","data":null,"code":500}
+[200] [2021-11-09 04:19:52] localhost/webservice/api/master-posisi : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"5","nama_posisi":"KEPALA SEKOLAH","flag":"1"},{"id":"7","nama_posisi":"GURU","flag":"1"},{"id":"8","nama_posisi":"MURID","flag":"1"},{"id":"9","nama_posisi":"STAFF KEBERSIHAN","flag":"1"}],"code":200}
+[500] [2021-11-09 04:22:13] localhost/webservice/api/master-posisi : {"success":true,"message":"Internal Server Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'","data":null,"code":500}
+[500] [2021-11-09 04:22:14] localhost/webservice/api/master-posisi : {"success":true,"message":"Internal Server Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'","data":null,"code":500}
+[500] [2021-11-09 04:22:15] localhost/webservice/api/master-posisi : {"success":true,"message":"Internal Server Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'","data":null,"code":500}
+[200] [2021-11-09 04:22:39] localhost/webservice/api/master-posisi : {"success":true,"message":"Data berhasil didapatkan","data":[{"nama_posisi":"GURU"},{"nama_posisi":"KEPALA SEKOLAH"},{"nama_posisi":"MURID"},{"nama_posisi":"STAFF KEBERSIHAN"}],"code":200}
+[200] [2021-11-09 04:25:06] localhost/webservice/api/master-posisi : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"7","nama_posisi":"GURU"},{"id":"5","nama_posisi":"KEPALA SEKOLAH"},{"id":"8","nama_posisi":"MURID"},{"id":"9","nama_posisi":"STAFF KEBERSIHAN"}],"code":200}
+[200] [2021-11-09 04:27:43] localhost/webservice/api/master-posisi : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"7","nama_posisi":"GURU"},{"id":"5","nama_posisi":"KEPALA SEKOLAH"},{"id":"8","nama_posisi":"MURID"},{"id":"9","nama_posisi":"STAFF KEBERSIHAN"}],"code":200}
+[200] [2021-11-09 04:28:49] localhost/webservice/api/master-posisi : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"7","nama_posisi":"GURU"},{"id":"5","nama_posisi":"KEPALA SEKOLAH"},{"id":"8","nama_posisi":"MURID"},{"id":"9","nama_posisi":"STAFF KEBERSIHAN"}],"code":200}
+[500] [2021-11-09 04:28:57] localhost/webservice/api/master-posisi/create : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'STAFF KEBERSIHAN' for key 'nama_posisi'","data":null,"code":500}
+[405] [2021-11-09 04:29:11] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Method Not Allowed: PUT","data":null,"code":405}
+[405] [2021-11-09 04:29:13] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Method Not Allowed: PUT","data":null,"code":405}
+[400] [2021-11-09 04:29:16] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 04:29:18] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 04:29:19] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 04:29:20] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 04:29:20] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 04:29:49] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 04:29:49] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 04:29:50] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[405] [2021-11-09 04:30:22] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Method Not Allowed: PUT","data":null,"code":405}
+[405] [2021-11-09 04:30:23] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Method Not Allowed: PUT","data":null,"code":405}
+[400] [2021-11-09 04:30:26] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[405] [2021-11-09 04:30:45] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Method Not Allowed: PUT","data":null,"code":405}
+[405] [2021-11-09 04:30:47] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Method Not Allowed: PUT","data":null,"code":405}
+[405] [2021-11-09 04:30:47] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Method Not Allowed: PUT","data":null,"code":405}
+[200] [2021-11-09 04:32:24] localhost/webservice/api/master-posisi/update : {"success":false,"message":"data tidak ditemukan","data":null,"code":200}
+[400] [2021-11-09 04:36:50] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Parameter 'id' required","data":null,"code":400}
+[400] [2021-11-09 04:36:51] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Parameter 'id' required","data":null,"code":400}
+[400] [2021-11-09 04:36:57] localhost/webservice/api/master-posisi/update?id=1 : {"success":false,"message":"Parameter 'id' required","data":null,"code":400}
+[400] [2021-11-09 04:37:04] localhost/webservice/api/master-posisi/update?id=1 : {"success":false,"message":"Parameter 'id' required","data":null,"code":400}
+[400] [2021-11-09 04:37:05] localhost/webservice/api/master-posisi/update?id=1 : {"success":false,"message":"Parameter 'id' required","data":null,"code":400}
+[400] [2021-11-09 04:37:06] localhost/webservice/api/master-posisi/update?id=1 : {"success":false,"message":"Parameter 'id' required","data":null,"code":400}
+[404] [2021-11-09 04:57:30] localhost/webservice/api/master-posisi/update/1 : {"success":false,"message":"Module 'master-posisi\/update'  Not Found","data":null,"code":404}
+[400] [2021-11-09 05:21:29] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:21:31] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:21:46] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:21:47] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:21:48] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:21:49] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:21:49] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:21:50] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:21:52] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:21:52] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:31:02] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Parameter 'id' required","data":null,"code":400}
+[400] [2021-11-09 05:31:03] localhost/webservice/api/master-posisi/update : {"success":false,"message":"Parameter 'id' required","data":null,"code":400}
+[400] [2021-11-09 05:31:07] localhost/webservice/api/master-posisi/create : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:31:19] localhost/webservice/api/master-posisi/create : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:31:20] localhost/webservice/api/master-posisi/create : {"success":false,"message":"Field 'nama_posisi' tidak boleh kosong","data":null,"code":400}
+[200] [2021-11-09 05:31:30] localhost/webservice/api/master-posisi/create : {"success":true,"message":"Data berhasil ditambahkan","data":null,"code":200}
+[500] [2021-11-09 05:31:46] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:31:48] localhost/webservice/api/master-posisi/update?id=12 : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[200] [2021-11-09 05:31:55] localhost/webservice/api/master-posisi : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"7","nama_posisi":"GURU"},{"id":"5","nama_posisi":"KEPALA SEKOLAH"},{"id":"12","nama_posisi":"KEPSEK"},{"id":"8","nama_posisi":"MURID"},{"id":"9","nama_posisi":"STAFF KEBERSIHAN"}],"code":200}
+[500] [2021-11-09 05:32:07] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:32:08] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:32:09] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:35:16] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:20] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:21] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:22] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:23] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:23] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:24] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:25] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:25] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:37] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:37] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:38] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:39] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:49] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[500] [2021-11-09 05:38:50] localhost/webservice/api/master-posisi/update?id=8 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[200] [2021-11-09 05:43:34] localhost/webservice/api/master-posisi/update?id=8 : {"success":true,"message":"Data berhasil diubah","data":null,"code":200}
+[200] [2021-11-09 05:43:39] localhost/webservice/api/master-posisi : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"7","nama_posisi":"GURU"},{"id":"5","nama_posisi":"KEPALA SEKOLAH"},{"id":"12","nama_posisi":"KEPSEK"},{"id":"8","nama_posisi":"MURID 1"},{"id":"9","nama_posisi":"STAFF KEBERSIHAN"}],"code":200}
+[200] [2021-11-09 05:43:47] localhost/webservice/api/master-posisi/update?id=8 : {"success":true,"message":"Data berhasil diubah","data":null,"code":200}
+[200] [2021-11-09 05:44:28] localhost/webservice/api/master-posisi/view?id=8 : {"success":false,"message":"Data kosong","data":null,"code":200}
+[200] [2021-11-09 05:44:35] localhost/webservice/api/master-posisi/view?id=8 : {"success":false,"message":"Data kosong","data":null,"code":200}
+[200] [2021-11-09 05:45:12] localhost/webservice/api/master-posisi/view?id=8 : {"success":false,"message":"Data kosong","data":null,"code":200}
+[200] [2021-11-09 05:45:13] localhost/webservice/api/master-posisi/view?id=8 : {"success":false,"message":"Data kosong","data":null,"code":200}
+[404] [2021-11-09 05:45:19] localhost/webservice/api/master-posisi/view8 : {"success":false,"message":"action not found","data":null,"code":404}
+[200] [2021-11-09 05:45:20] localhost/webservice/api/master-posisi/view/8 : {"success":false,"message":"Data kosong","data":null,"code":200}
+[200] [2021-11-09 05:46:12] localhost/webservice/api/master-posisi/view/8 : {"success":true,"message":"Data berhasil didapatkan","data":{"id":"8","nama_posisi":"MURID 2"},"code":200}
+[200] [2021-11-09 05:46:48] localhost/webservice/api/master-posisi/view/8 : {"success":true,"message":"Data berhasil didapatkan","data":{"id":"8","nama_posisi":"MURID 2"},"code":200}
+[200] [2021-11-09 05:47:08] localhost/webservice/api/master-posisi/update/8 : {"success":true,"message":"Data berhasil diubah","data":null,"code":200}
+[200] [2021-11-09 05:47:44] localhost/webservice/api/master-posisi/update/8 : {"success":true,"message":"Data berhasil diubah","data":null,"code":200}
+[200] [2021-11-09 05:47:46] localhost/webservice/api/master-posisi/view/8 : {"success":true,"message":"Data berhasil didapatkan","data":{"id":"8","nama_posisi":"MURID 3"},"code":200}
+[200] [2021-11-09 05:48:25] localhost/webservice/api/master-posisi/delete/8 : {"success":true,"message":"Data berhasil dihapus","data":null,"code":200}
+[200] [2021-11-09 05:48:26] localhost/webservice/api/master-posisi/delete/8 : {"success":true,"message":"Data berhasil dihapus","data":null,"code":200}
+[200] [2021-11-09 05:49:22] localhost/webservice/api/master-posisi/delete/8 : {"success":false,"message":"data tidak ditemukan","data":null,"code":200}
+[404] [2021-11-09 05:49:53] localhost/webservice/api/master-posisi/delete/8 : {"success":false,"message":"data tidak ditemukan","data":null,"code":404}
+[404] [2021-11-09 05:49:54] localhost/webservice/api/master-posisi/delete/8 : {"success":false,"message":"data tidak ditemukan","data":null,"code":404}
+[404] [2021-11-09 05:51:36] localhost/webservice/api/master-posisi/delete/8 : {"success":false,"message":"data tidak ditemukan","data":null,"code":404}
+[404] [2021-11-09 05:51:36] localhost/webservice/api/master-posisi/delete/8 : {"success":false,"message":"data tidak ditemukan","data":null,"code":404}
+[404] [2021-11-09 05:53:09] localhost/webservice/api/master-posisi/delete/8 : {"success":false,"message":"data tidak ditemukan","data":null,"code":404}
+[404] [2021-11-09 05:53:12] localhost/webservice/api/master-posisi/update/8 : {"success":false,"message":"data tidak ditemukan","data":null,"code":404}

@@ -4,6 +4,7 @@
 demo : https://demoservice.defrindr.my.id/
 
 ## FITUR 
+- Fixed Schema
 - Access Log
 - auto detection controller
 - auto generate CRUD Controller
@@ -13,3 +14,13 @@ demo : https://demoservice.defrindr.my.id/
 
 # Catatan
 Untuk penamaan dari class di controller antara nama file dan class harus sync
+
+# Instalasi
+
+```
+git clone git@github.com:defrindr/KULIAH_Restful_DEMO.git restfull
+cd restfull
+chmod -R 777 runtime
+
+```
+

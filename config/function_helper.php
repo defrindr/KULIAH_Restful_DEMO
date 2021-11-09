@@ -73,3 +73,23 @@ if (!function_exists("pascal2camel")) {
         return $output;
     }
 }
+
+if (!function_exists('dq')) {
+    function dq($query, $params)
+    {
+        $keys = array();
+
+        # build a regular expression for each parameter
+        foreach ($params as $key => $value) {
+            if (is_string($key)) {
+                $keys[] = '/' . $key . '/';
+            } else {
+                $keys[] = '/[?]/';
+            }
+        }
+        // dd($keys);
+
+        $query = preg_replace($keys, $params, $query, 1, $count);
+        dd($query);
+    }
+}

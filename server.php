@@ -62,14 +62,16 @@ try {
 
     $list_allowed_method = $class->getVerbs()[$_GET['action']];
     if ($list_allowed_method != null) {
-        $access_method = $_SERVER['REQUEST_METHOD'];
+        $access_method = $_POST['_method'] || $_SERVER['REQUEST_METHOD'];
         if (in_array($access_method, $list_allowed_method) == false)
             response_api(["success" => false, "message" => "Method Not Allowed: " . implode(', ', $list_allowed_method), 'code' => 405]);
     }
 
     unset($_GET['module']);
     unset($_GET['action']);
-    $class->$action($_POST ?? $_GET ?? $_REQUEST ?? []);
+    $post_data = [];
+    parse_str(file_get_contents("php://input"),$post_data);
+    $class->$action($post_data);
 } catch (\Throwable $th) {
     response_api(["success" => false, "message" => "Internal Server Error: " . $th->getMessage(), "code" => 500]);
 }
