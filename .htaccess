@@ -1,0 +1,7 @@
+Options +SymlinksIfOwnerMatch
+#IndexIgnore */*
+RewriteEngine on
+#RewriteBase /
+
+RewriteRule ^api/(.*)/(.*) server.php?module=$1&action=$2 [L]
+RewriteRule ^api/(.*) server.php?module=$1&action=index [L]

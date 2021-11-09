@@ -1,0 +1,46 @@
+[500] [2021-11-09 03:43:08] localhost/webservice/api/pegawai/create : {"success":false,"message":"Internal Server Error: Call to undefined method PegawaiController::actionactionCreate()","data":null,"code":500}
+[500] [2021-11-09 03:43:47] localhost/webservice/api/pegawai/create : {"success":false,"message":"Internal Server Error: Call to undefined method PegawaiController::actionactionCreate()","data":null,"code":500}
+[500] [2021-11-09 03:43:48] localhost/webservice/api/pegawai/create : {"success":false,"message":"Internal Server Error: Call to undefined method PegawaiController::actionactionCreate()","data":null,"code":500}
+[500] [2021-11-09 03:43:48] localhost/webservice/api/pegawai/create : {"success":false,"message":"Internal Server Error: Call to undefined method PegawaiController::actionactionCreate()","data":null,"code":500}
+[500] [2021-11-09 03:44:16] localhost/webservice/api/pegawai/create : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nama_pegawai' cannot be null","data":null,"code":500}
+[500] [2021-11-09 03:44:18] localhost/webservice/api/pegawai/create : {"success":false,"message":"Data gagal ditambahkan: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nama_pegawai' cannot be null","data":null,"code":500}
+[400] [2021-11-09 03:45:03] localhost/webservice/api/pegawai/create : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[500] [2021-11-09 03:47:13] localhost/webservice/api/pegawai/create : {"success":false,"message":"Internal Server Error: Call to undefined method PegawaiController::getVerbs()","data":null,"code":500}
+[405] [2021-11-09 03:49:29] localhost/webservice/api/pegawai/create : {"success":false,"message":"Method Not Allowed :POST","data":null,"code":405}
+[405] [2021-11-09 03:49:36] localhost/webservice/api/pegawai/create : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[200] [2021-11-09 03:49:38] localhost/webservice/api/pegawai/idnex : {"success":false,"message":"action must be set","data":null,"code":200}
+[200] [2021-11-09 03:49:40] localhost/webservice/api/pegawai/index : {"success":false,"message":"action must be set","data":null,"code":200}
+[200] [2021-11-09 03:49:43] localhost/webservice/api/pegawai : {"success":false,"message":"action must be set","data":null,"code":200}
+[200] [2021-11-09 03:49:52] localhost/webservice/api/pegawai : {"success":false,"message":"Data kosong","data":null,"code":200}
+[200] [2021-11-09 03:51:51] localhost/webservice/api/pegawai : {"success":false,"message":"Data kosong","data":null,"code":200}
+[200] [2021-11-09 03:52:53] localhost/webservice/api/pegawai : {"success":false,"message":"Data kosong","data":null,"code":200}
+[200] [2021-11-09 03:52:54] localhost/webservice/api/pegawai : {"success":false,"message":"Data kosong","data":null,"code":200}
+[200] [2021-11-09 03:53:01] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":null,"code":200,"test":"berjalan lancar"}
+[200] [2021-11-09 03:53:25] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
+[200] [2021-11-09 03:53:33] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":[{"test":"berjalan lancar"}],"code":200}
+[200] [2021-11-09 03:53:42] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
+[200] [2021-11-09 03:54:03] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
+[200] [2021-11-09 03:54:04] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
+[200] [2021-11-09 03:54:05] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
+[200] [2021-11-09 03:54:05] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
+[200] [2021-11-09 03:54:06] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
+[200] [2021-11-09 03:54:06] localhost/webservice/api/pegawai/coba-aksi : {"success":true,"message":"Action Success","data":{"test":"berjalan lancar"},"code":200}
+[405] [2021-11-09 03:54:16] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:17] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:17] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:17] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:18] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:19] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:20] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:20] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:21] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:21] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:21] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:21] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:22] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[405] [2021-11-09 03:54:23] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"Method Not Allowed: POST","data":null,"code":405}
+[200] [2021-11-09 03:55:05] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"action must be set","data":null,"code":200}
+[200] [2021-11-09 03:55:06] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"action must be set","data":null,"code":200}
+[200] [2021-11-09 03:55:07] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"action must be set","data":null,"code":200}
+[200] [2021-11-09 03:55:07] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"action must be set","data":null,"code":200}
+[404] [2021-11-09 03:55:34] localhost/webservice/api/pegawai/coba-aksi : {"success":false,"message":"action not found","data":null,"code":404}
