@@ -1,7 +1,7 @@
 # RESTFUL API DEMO
 
 ## Deskripsi
-demo : https://demoservice.defrindr.my.id/
+demo : https://demoservice.defrindr.my.id/ [akan hadir]
 
 ## FITUR 
 - Fixed Schema
