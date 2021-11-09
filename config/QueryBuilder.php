@@ -41,6 +41,7 @@ class QueryBuilder
                 if (!$with_response) return null;
                 $response['success'] = false;
                 $response['message'] = 'Data kosong';
+                $response['code'] = 404;
             }
         } catch (\Throwable $th) {
             $response['message'] = 'Internal Server Error: ' . $th->getMessage();
@@ -97,11 +98,11 @@ class QueryBuilder
         return $response;
     }
 
-    function assignData($keys, $post)
+    function assignData($keys, $post, $type = "create")
     {
         $params = [];
         foreach ($keys as $key) {
-            $is_field_required = in_array($key, $this->required);
+            $is_field_required = in_array($key, $this->required) && $type == "create";
             if ($is_field_required && isset($post[$key]) == false) response_api(['success' => false, 'message' => "Field '$key' tidak boleh kosong", "code" => 400]);
             if ($is_field_required && $post[$key] == "" && $key != $this->primary_key) response_api(['success' => false, 'message' => "Field '$key' tidak boleh kosong", "code" => 400]);
             $params[":" . $key] = $post[$key];

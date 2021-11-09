@@ -1,0 +1,575 @@
+{
+	"info": {
+		"_postman_id": "469c8d40-fe06-4cdb-baab-ab196f15122a",
+		"name": "USER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Master Posisi",
+			"item": [
+				{
+					"name": "LIST DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/master-posisi",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"master-posisi"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIST DATA",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/master-posisi",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"master-posisi"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Nov 2021 03:25:06 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.13"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Data berhasil didapatkan\",\n    \"data\": [\n        {\n            \"id\": \"7\",\n            \"nama_posisi\": \"GURU\"\n        },\n        {\n            \"id\": \"5\",\n            \"nama_posisi\": \"KEPALA SEKOLAH\"\n        },\n        {\n            \"id\": \"8\",\n            \"nama_posisi\": \"MURID\"\n        },\n        {\n            \"id\": \"9\",\n            \"nama_posisi\": \"STAFF KEBERSIHAN\"\n        }\n    ],\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_posisi",
+									"value": "KEPSEK",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/master-posisi/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"master-posisi",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Error Required",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/webservice/api/master-posisi/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"webservice",
+										"api",
+										"master-posisi",
+										"create"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Nov 2021 03:16:12 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.13"
+								},
+								{
+									"key": "Content-Length",
+									"value": "91"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Field 'nama_posisi' tidak boleh kosong\",\n    \"data\": null,\n    \"code\": 400\n}"
+						},
+						{
+							"name": "METHOD NOT SUPPORT",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/webservice/api/master-posisi/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"webservice",
+										"api",
+										"master-posisi",
+										"create"
+									]
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Nov 2021 03:16:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.13"
+								},
+								{
+									"key": "Content-Length",
+									"value": "77"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Method Not Allowed: POST\",\n    \"data\": null,\n    \"code\": 405\n}"
+						}
+					]
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_posisi",
+									"value": "MURID 3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/master-posisi/update/8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"master-posisi",
+								"update",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UPDATE",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nama_posisi",
+											"value": "MURID 2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/master-posisi/update?id=8",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"master-posisi",
+										"update"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "8"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Nov 2021 04:43:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.13"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Data berhasil diubah\",\n    \"data\": null,\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "VIEW",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{url}}/api/master-posisi/view/8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"master-posisi",
+								"view",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "VIEW",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}/api/master-posisi/view/8",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"master-posisi",
+										"view",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 09 Nov 2021 04:46:48 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.13"
+								},
+								{
+									"key": "Content-Length",
+									"value": "106"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Data berhasil didapatkan\",\n    \"data\": {\n        \"id\": \"8\",\n        \"nama_posisi\": \"MURID 2\"\n    },\n    \"code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/master-posisi/delete/8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"master-posisi",
+								"delete",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PEGAWAI",
+			"item": [
+				{
+					"name": "LIST DATA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/pegawai",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pegawai"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_pegawai",
+									"value": "DEFRI INDRA Maharidka",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "L",
+									"type": "text"
+								},
+								{
+									"key": "posisi_pegawai",
+									"value": "5",
+									"description": "dari tabel master posisi",
+									"type": "text"
+								},
+								{
+									"key": "alamat_pegawai",
+									"value": "Ponorogo",
+									"type": "text"
+								},
+								{
+									"key": "status_pegawai",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/pegawai/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pegawai",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VIEW",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/pegawai/view/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pegawai",
+								"view",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_pegawai",
+									"value": "DEFRI INDRA Mahardika",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "L",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "posisi_pegawai",
+									"value": "5",
+									"description": "dari tabel master posisi",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "alamat_pegawai",
+									"value": "Ponorogo",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "status_pegawai",
+									"value": "0",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/pegawai/update/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pegawai",
+								"update",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -18,4 +18,15 @@ class PegawaiController extends Controller
             "data" => ["test" => "berjalan lancar"]
         ]);
     }
+
+    public function querySchema()
+    {
+        $column = $this->columns;
+        array_unshift($column, $this->primary_key); // add primary key
+        unset($column["posisi_pegawai"]); // remove relation key
+        foreach ($column as $idx => $item) $column[$idx] = "pegawai.$item"; // add suffix
+        $selected_column = implode(", ", $column); // join string
+
+        return "select $selected_column, master_posisi.nama_posisi from $this->table left join master_posisi on pegawai.posisi_pegawai = master_posisi.id";
+    }
 }

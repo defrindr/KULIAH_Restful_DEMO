@@ -62,7 +62,7 @@ try {
 
     $list_allowed_method = $class->getVerbs()[$_GET['action']];
     if ($list_allowed_method != null) {
-        $access_method = $_POST['_method'] || $_SERVER['REQUEST_METHOD'];
+        $access_method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
         if (in_array($access_method, $list_allowed_method) == false)
             response_api(["success" => false, "message" => "Method Not Allowed: " . implode(', ', $list_allowed_method), 'code' => 405]);
     }

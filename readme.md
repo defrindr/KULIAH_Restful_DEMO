@@ -21,6 +21,8 @@ Untuk penamaan dari class di controller antara nama file dan class harus sync
 git clone git@github.com:defrindr/KULIAH_Restful_DEMO.git restfull
 cd restfull
 chmod -R 777 runtime
-
 ```
+- Export Database
+
+```Untuk mengatur database ada di config/db.php```
 

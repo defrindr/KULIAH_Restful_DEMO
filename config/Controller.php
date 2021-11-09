@@ -10,9 +10,10 @@ class Controller extends QueryBuilder
         'index' => ['GET', 'HEAD'],
         'view' => ['GET', 'HEAD'],
         'create' => ['POST'],
-        'update' => ['PUT'],
+        'update' => ['PUT', 'PATCH'],
         'delete' => ['DELETE'],
     ];
+
     public $primary_key;
     public $columns;
     public $required;
@@ -32,12 +33,17 @@ class Controller extends QueryBuilder
     protected function checkDataExist($kode)
     {
         if ($kode[":" . $this->primary_key] == null) response_api(["success" => false, "message" => "Parameter '$this->primary_key' required", "code" => 400]);
+
+        $data = $this->ExecQuery("select * from $this->table where {$this->table}.{$this->primary_key}=:{$this->primary_key}", $kode);
+        if ($data['success'] == "Data kosong") response_api(["success" => false, "message" => "data tidak ditemukan", "code" => 404]);
+        return $data;
+    }
+
+    public function querySchema()
+    {
         $column = $this->getVisibleColumns();
         $column_str = implode(",", $column);
-
-        $data = $this->ExecQuery("select $column_str from $this->table where {$this->primary_key}=:{$this->primary_key}", $kode);
-        if ($data['message'] == "Data kosong") response_api(["success" => false, "message" => "data tidak ditemukan", "code" => 404]);
-        return true;
+        return "select $column_str from $this->table";
     }
 
     protected function getVisibleColumns()
@@ -49,20 +55,19 @@ class Controller extends QueryBuilder
 
     public function actionIndex()
     {
-        $column = implode(",", $this->getVisibleColumns());
-        $response = $this->ExecQuery("select $column from $this->table");
+        $response = $this->ExecQuery($this->querySchema());
         response_api($response);
     }
 
-    public function actionView($post)
+    public function actionView()
     {
         try {
             $keys = [$this->primary_key];
             $kode = $this->assignData($keys, [$this->primary_key => $_GET['id']]);
-            $column = implode(",", $this->getVisibleColumns());
+            if ($kode[":" . $this->primary_key] == null) response_api(["success" => false, "message" => "Parameter '$this->primary_key' required", "code" => 400]);
 
-            $response = $this->ExecQuery("select $column from $this->table where {$this->primary_key}=:{$this->primary_key} limit 1", $kode);
-            response_api($response);
+            $data = $this->ExecQuery("select * from $this->table where {$this->table}.{$this->primary_key}=:{$this->primary_key}", $kode);
+            response_api($data);
         } catch (\Exception $e) {
             response_api(['success' => false, 'message' => 'Error: ' . $e->getMessage(), "code" => 500]);
         }
@@ -87,12 +92,18 @@ class Controller extends QueryBuilder
         try {
             $keys = [$this->primary_key];
             $kode = $this->assignData($keys,  [$this->primary_key => $_GET['id']]);
-            $this->checkDataExist($kode);
+            $data = $this->checkDataExist($kode);
+            $data = $data['data'][0];
 
+            $keys = $this->columns;
             $column = $this->getVisibleColumns();
-            $params = $this->assignData($column, array_merge($post, [$this->primary_key => $_GET[$this->primary_key]]));
+
+            $data = array_merge((array)$data, $post);
+            $data = array_merge($data, [$this->primary_key => $_GET[$this->primary_key]]);
+            $params = $this->assignData($column, $data, 'update');
 
             $query = $this->createUpdateQuery($this->table, $keys, $this->primary_key);
+            // dd($query);
             $response = $this->update($query, $params);
             response_api($response);
         } catch (\Exception $e) {

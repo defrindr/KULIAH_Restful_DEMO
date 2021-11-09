@@ -101,3 +101,45 @@
 [404] [2021-11-09 05:51:36] localhost/webservice/api/master-posisi/delete/8 : {"success":false,"message":"data tidak ditemukan","data":null,"code":404}
 [404] [2021-11-09 05:53:09] localhost/webservice/api/master-posisi/delete/8 : {"success":false,"message":"data tidak ditemukan","data":null,"code":404}
 [404] [2021-11-09 05:53:12] localhost/webservice/api/master-posisi/update/8 : {"success":false,"message":"data tidak ditemukan","data":null,"code":404}
+[200] [2021-11-09 05:55:56] localhost/webservice/api/pegawai : {"success":false,"message":"Data kosong","data":null,"code":200}
+[400] [2021-11-09 05:56:15] localhost/webservice/api/pegawai/create : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:56:30] localhost/webservice/api/pegawai/create : {"success":false,"message":"Field 'jenis_kelamin' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:56:40] localhost/webservice/api/pegawai/create : {"success":false,"message":"Field 'jenis_kelamin' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:56:47] localhost/webservice/api/pegawai/create : {"success":false,"message":"Field 'posisi_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:56:50] localhost/webservice/api/pegawai/create : {"success":false,"message":"Field 'posisi_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:57:07] localhost/webservice/api/pegawai/create : {"success":false,"message":"Field 'alamat_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:57:15] localhost/webservice/api/pegawai/create : {"success":false,"message":"Field 'alamat_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 05:57:56] localhost/webservice/api/pegawai/create : {"success":false,"message":"Field 'status_pegawai' tidak boleh kosong","data":null,"code":400}
+[200] [2021-11-09 05:58:16] localhost/webservice/api/pegawai/create : {"success":true,"message":"Data berhasil ditambahkan","data":null,"code":200}
+[200] [2021-11-09 05:58:20] localhost/webservice/api/pegawai : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"1","nama_pegawai":"DEFRI INDRA","jenis_kelamin":"","posisi_pegawai":"1","alamat_pegawai":"Ponorogo","status_pegawai":"0"}],"code":200}
+[200] [2021-11-09 05:59:08] localhost/webservice/api/pegawai/create : {"success":true,"message":"Data berhasil ditambahkan","data":null,"code":200}
+[200] [2021-11-09 05:59:10] localhost/webservice/api/pegawai/create : {"success":true,"message":"Data berhasil ditambahkan","data":null,"code":200}
+[200] [2021-11-09 05:59:15] localhost/webservice/api/pegawai : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"1","nama_pegawai":"DEFRI INDRA","jenis_kelamin":"L","posisi_pegawai":"1","alamat_pegawai":"Ponorogo","status_pegawai":"0"},{"id":"2","nama_pegawai":"DEFRI INDRA","jenis_kelamin":"L","posisi_pegawai":"1","alamat_pegawai":"Ponorogo","status_pegawai":"0"},{"id":"3","nama_pegawai":"DEFRI INDRA","jenis_kelamin":"L","posisi_pegawai":"1","alamat_pegawai":"Ponorogo","status_pegawai":"0"}],"code":200}
+[200] [2021-11-09 06:09:13] localhost/webservice/api/pegawai : {"success":false,"message":"Data kosong","data":null,"code":200}
+[200] [2021-11-09 06:09:51] localhost/webservice/api/pegawai : {"success":false,"message":"Data kosong","data":null,"code":200}
+[200] [2021-11-09 06:10:04] localhost/webservice/api/pegawai : {"success":true,"message":"Data berhasil didapatkan","data":[{"nama_pegawai":"DEFRI INDRA","jenis_kelamin":"L","posisi_pegawai":"5","alamat_pegawai":"Ponorogo","status_pegawai":"0","nama_posisi":"KEPALA SEKOLAH"},{"nama_pegawai":"DEFRI INDRA","jenis_kelamin":"L","posisi_pegawai":"5","alamat_pegawai":"Ponorogo","status_pegawai":"0","nama_posisi":"KEPALA SEKOLAH"},{"nama_pegawai":"DEFRI INDRA","jenis_kelamin":"L","posisi_pegawai":"7","alamat_pegawai":"Ponorogo","status_pegawai":"0","nama_posisi":"GURU"}],"code":200}
+[200] [2021-11-09 06:11:14] localhost/webservice/api/pegawai : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"1","nama_pegawai":"DEFRI INDRA","jenis_kelamin":"L","posisi_pegawai":"5","alamat_pegawai":"Ponorogo","status_pegawai":"0","nama_posisi":"KEPALA SEKOLAH"},{"id":"2","nama_pegawai":"DEFRI INDRA","jenis_kelamin":"L","posisi_pegawai":"5","alamat_pegawai":"Ponorogo","status_pegawai":"0","nama_posisi":"KEPALA SEKOLAH"},{"id":"3","nama_pegawai":"DEFRI INDRA","jenis_kelamin":"L","posisi_pegawai":"7","alamat_pegawai":"Ponorogo","status_pegawai":"0","nama_posisi":"GURU"}],"code":200}
+[404] [2021-11-09 06:11:21] localhost/webservice/api/pegawai/3 : {"success":false,"message":"action not found","data":null,"code":404}
+[500] [2021-11-09 06:11:25] localhost/webservice/api/pegawai/view/3 : {"success":true,"message":"Internal Server Error: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous","data":null,"code":500}
+[200] [2021-11-09 06:12:08] localhost/webservice/api/pegawai/view/3 : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"3","nama_pegawai":"DEFRI INDRA","jenis_kelamin":"L","posisi_pegawai":"7","alamat_pegawai":"Ponorogo","status_pegawai":"0","nama_posisi":"GURU"}],"code":200}
+[500] [2021-11-09 06:16:08] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Data gagal diubah: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens","data":null,"code":500}
+[400] [2021-11-09 06:17:33] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 06:17:35] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 06:17:35] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 06:18:58] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 06:18:59] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 06:19:26] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 06:19:27] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 06:19:27] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 06:19:28] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[400] [2021-11-09 06:20:12] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Field 'nama_pegawai' tidak boleh kosong","data":null,"code":400}
+[200] [2021-11-09 06:27:22] localhost/webservice/api/pegawai/update/3 : {"success":true,"message":"Data berhasil diubah","data":null,"code":200}
+[200] [2021-11-09 06:27:28] localhost/webservice/api/pegawai/view/3 : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"3","nama_pegawai":"DEFRI INDRA Maharidka","jenis_kelamin":"L","posisi_pegawai":"5","alamat_pegawai":"Ponorogo","status_pegawai":"0"}],"code":200}
+[200] [2021-11-09 06:28:50] localhost/webservice/api/pegawai/update/3 : {"success":true,"message":"Data berhasil diubah","data":null,"code":200}
+[200] [2021-11-09 06:28:50] localhost/webservice/api/pegawai/update/3 : {"success":true,"message":"Data berhasil diubah","data":null,"code":200}
+[405] [2021-11-09 06:29:54] localhost/webservice/api/pegawai/update/3 : {"success":false,"message":"Method Not Allowed: PUT, PATCH","data":null,"code":405}
+[200] [2021-11-09 06:29:59] localhost/webservice/api/pegawai/update/3 : {"success":true,"message":"Data berhasil diubah","data":null,"code":200}
+[200] [2021-11-09 06:30:25] localhost/webservice/api/pegawai/create : {"success":true,"message":"Data berhasil ditambahkan","data":null,"code":200}
+[200] [2021-11-09 06:30:40] localhost/webservice/api/pegawai/update/3 : {"success":true,"message":"Data berhasil diubah","data":null,"code":200}
+[200] [2021-11-09 06:30:41] localhost/webservice/api/pegawai/update/3 : {"success":true,"message":"Data berhasil diubah","data":null,"code":200}
+[200] [2021-11-09 06:30:43] localhost/webservice/api/pegawai/view/3 : {"success":true,"message":"Data berhasil didapatkan","data":[{"id":"3","nama_pegawai":"DEFRI INDRA Mahardika","jenis_kelamin":"L","posisi_pegawai":"5","alamat_pegawai":"Ponorogo","status_pegawai":"0"}],"code":200}
